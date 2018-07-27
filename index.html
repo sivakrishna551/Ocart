@@ -3,11 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>OcartApp</title>
-  <base href="https://sivakrishna551.github.io/Ocart/">
+  <base href="https://sivakrishna551.github.io/Ocart/">  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="281688150992-o9ge04ou1cq0ja9b5tsd7gd29kcoprg3.apps.googleusercontent.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+  
+  </script>
 <link rel="stylesheet" href="styles.4cebd05307e96b3a3c6d.css"></head>
 <body>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.d32c9b23ab19651ab0d3.js"></script></body>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.105cfde73ef91c053f8e.js"></script></body>
 </html>
